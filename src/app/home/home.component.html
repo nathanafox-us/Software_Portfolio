@@ -1,0 +1,8 @@
+<div class="page-content">
+    <h2 style="text-align: center;">Github Projects</h2>
+    <div class="card-list">
+        @for (project of projects; track $index) {
+            <app-github-card [projectTitle]=project.name></app-github-card>
+        }  
+    </div>
+</div>

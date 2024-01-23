@@ -1,0 +1,10 @@
+<div class="chart-container">
+    Chart
+</div>
+<div class="chart-details">
+    <ul>
+        @for (language of languages; track $index) {
+            <li>{{language.name}} : {{language.count}}</li>
+        }
+    </ul>
+</div>

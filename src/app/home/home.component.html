@@ -2,7 +2,12 @@
     <h2 style="text-align: center;">Github Projects</h2>
     <div class="card-list">
         @for (project of projects; track $index) {
-            <app-github-card [projectTitle]=project.name></app-github-card>
+            <app-github-card 
+            [projectTitle]=project.name
+            [projectDetails]=project.description
+            [cloneUrl]=project.clone_url
+            [languagesUrl]=project.languages_url
+            ></app-github-card>
         }  
     </div>
 </div>

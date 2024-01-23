@@ -1,10 +1,6 @@
 <div class="card">
     <label>{{projectTitle}}</label>
     {{projectDetails}}
-    <div class="language-wheel">
-        @for (language of languages; track $index) {
-            <div>{{language.name}} : {{language.count}}</div>
-        }
-    </div>
+    <app-language-wheel [languages]=languages></app-language-wheel>
     {{cloneUrl}}
 </div>

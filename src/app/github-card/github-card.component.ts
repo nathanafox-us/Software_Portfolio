@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { GithubProjectService } from '../github-project.service';
 import { GithubLanguage } from '../github-languages';
+import { LanguageWheelComponent } from '../language-wheel/language-wheel.component';
 
 @Component({
   selector: 'app-github-card',
   standalone: true,
-  imports: [],
+  imports: [LanguageWheelComponent],
   templateUrl: './github-card.component.html',
   styleUrl: './github-card.component.scss'
 })

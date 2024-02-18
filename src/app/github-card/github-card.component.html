@@ -1,6 +1,18 @@
 <div class="card">
-    <label>{{projectTitle}}</label>
-    {{projectDetails}}
+    
+    <label>
+        <a 
+            href="{{cloneUrl}}" 
+            target="_blank" 
+            title="{{projectTitle}}"
+        >
+            {{projectTitle}}
+        </a>
+    </label>
+    
+    <div class="details">
+        <p>{{projectDetails}}</p>
+    </div>
+
     <app-language-wheel [languages]=languages></app-language-wheel>
-    {{cloneUrl}}
 </div>

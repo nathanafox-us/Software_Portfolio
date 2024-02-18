@@ -2,11 +2,12 @@ import { Component, Input, OnInit } from '@angular/core';
 import { GithubProjectService } from '../github-project.service';
 import { GithubLanguage } from '../github-languages';
 import { LanguageWheelComponent } from '../language-wheel/language-wheel.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 
 @Component({
   selector: 'app-github-card',
   standalone: true,
-  imports: [LanguageWheelComponent],
+  imports: [LanguageWheelComponent, CanvasJSAngularChartsModule],
   templateUrl: './github-card.component.html',
   styleUrl: './github-card.component.scss'
 })

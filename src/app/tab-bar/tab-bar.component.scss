@@ -4,22 +4,34 @@
 
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
 
-    margin-bottom: 20px;
+    justify-content: space-between;
     
     border-bottom: solid grey;
 }
 
-.header img {
-    padding-top: 20px;
-    height: 120px;
+// Column when mobile, then becomes row when there is enough room
+.header .row {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-.header h1 {
-    text-align: center;
-    margin: 5px 0px;
+.header .title {
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+
+.header .title h1 {
+    z-index: 1;
+}
+
+.header img {
+    position: absolute;
+    z-index: 0;
+
+    height: 200px;
 }
 
 .tab-bar {
@@ -36,20 +48,40 @@
 
 a {
     background-color: #3f525c;
-    border-radius: 2px;
     padding: 10px;
+    font-size: x-large;
+
     text-decoration: none;
     display: inline-block;
     color: #eee;
     text-align: center;
     
     height: fit-content;
-    margin: .5rem;
+    margin: 10px;
     box-sizing: border-box;
 } 
   
 a:hover {
     background-color: #000;
+}
+
+@media (min-width: 600px) {
+    .header .row {
+        flex-flow: row;
+    }    
+
+    .header .title {
+        margin: 10px;
+    }
+
+    .header {
+        flex-flow: row;
+    }
+
+    .header img {
+        position: relative;
+        height: 100px;
+    }
 }
 
 @media (min-width: 1200px) {

@@ -1,3 +1,84 @@
 .inquiries-page {
-    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+
+    width: 100%;
+}
+
+.row .head {
+    border-right: solid grey;
+    width: 140px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.contact-me {
+    align-self: center;
+    margin: 10px;
+}
+
+.email {
+    border-top: solid grey;
+}
+
+.subject {
+    border-top: solid grey;
+}
+
+.message {
+    border-top: solid grey;
+    border-bottom: solid grey;
+}
+
+.inquiries-page input {
+    margin: 10px;   
+    padding: 10px;
+    border-radius: 20px;
+    border: solid grey;
+
+    width: 100%;
+}
+.inquiries-page textarea {
+    margin: 10px;   
+    padding: 10px;
+    border-radius: 20px;
+    border: solid grey;
+
+    resize: vertical;
+
+    width: 100%;
+    height: 100px;
+}
+
+.inquiries-page .submit {
+    justify-content: center;
+}
+
+a.back {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+
+    background-color: bisque;
+    color: #222;
+
+    border-radius: 20px;
+    border: solid grey;
+}
+
+.inquiries-page button {
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+
+    border-radius: 20px;
+    border: solid grey;
 }

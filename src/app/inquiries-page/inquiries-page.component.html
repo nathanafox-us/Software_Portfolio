@@ -1,3 +1,31 @@
 <div class="page-content inquiries-page">
-    <p>inquiries-page works!</p>
+    <h2 class="contact-me">Contact Me</h2>
+
+    <div class="row email">
+        <div class="head">
+            <h3>From</h3>
+        </div>
+        
+        <input type="text" placeholder="Email" [(ngModel)]=fromEmail />
+    </div>
+
+    <div class="row subject">
+        <div class="head">
+            <h3>Subject</h3>
+        </div>
+        <input type="text" placeholder="Subject" [(ngModel)]=subject />
+    </div>
+
+    <div class="row message">
+        <div class="head">
+            <h3>Message</h3>
+        </div>
+        <textarea placeholder="Message" [(ngModel)]=message></textarea>
+    </div>
+
+    <div class="row submit">
+        <a href="/" class="back">Back</a>
+        <button type="button" (click)="submitForm()">Submit</button>
+    </div>
+    
 </div>

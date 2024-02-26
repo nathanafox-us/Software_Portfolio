@@ -13,8 +13,9 @@ export class InquiriesPageComponent {
   fromEmail = "";
   subject = "";
   message = "";
+  name = "";
 
   submitForm() {
-    
+    console.log("HELLO WORLD!!! BUTTON PRESSED!!");
   }
 }

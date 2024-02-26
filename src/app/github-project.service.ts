@@ -10,7 +10,7 @@ export class GithubProjectService {
   constructor(private _httpClient:HttpClient) { }
 
   getRepos() {
-    return this._httpClient.get('https://api.github.com/users/sergeantfox234/repos');
+    return this._httpClient.get('https://api.github.com/users/nathanafox-us/repos');
   }
 
   getLanguages(languagesUrl?:string) {

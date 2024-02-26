@@ -1,21 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     box-sizing: border-box;
+
+    font-size: 20px;
 }
 
 body {
     background-color: #fff7eb;
     margin: 0px;
-}
-
-.page-content {
-    margin: 20px auto;
-    padding: 1rem;
-
-    border: solid grey;
-    border-radius: 10px;
-
-    width: 85%;
-
-    background-color: #FEFEFE;
 }

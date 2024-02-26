@@ -1,28 +1,70 @@
-.projects-section {
+.page-content {
+    width: 85%;
+    margin: auto;
+}
+
+.page-content .col {
     display: flex;
     flex-flow: column;
 }
 
-.info-section {
-    display: flex;
-    flex-flow: column;
+.page-content .col h2 {
+    align-self: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.info {
+    border-radius: 20px;
+    background-color: #FEFEFE;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.info p {
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+.info ul {
+    background-color: #FFE4C4;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.info li {
+    max-width: 600px;
+    margin: 0px auto;
 }
 
 a.contact-me {
     align-self: center;
+    text-align: center;
+
     text-decoration: none;
 
     background-color: bisque;
     color: #222;
 
     padding: 10px;
+    margin: 20px;
     
     border-radius: 20px;
+}
+
+.info a.contact-me:hover {
+    background-color: rgb(255, 200, 132);
 }
 
 .card-list {
     display: inline-grid;
     grid-template-columns: 1fr;
+
+    margin: -10px -10px;
 }
 
 @media (min-width: 850px) {

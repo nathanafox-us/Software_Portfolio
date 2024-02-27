@@ -1,28 +1,34 @@
 <div class="page-content">
     <div class="col">
-        <h2>Mission</h2>
+        <h2 class="title">Mission</h2>
         <div class="info col">
-            <p> 
-                I am dedicated to making a flexible, reliable product that betters the community.
-                Let's lead by example and save the world with healthy business practices and good
-                software safety.
-            </p>  
-              
-            <ul>
-                <li>I will keep all personal data private</li>
-                <li>I will give frequent updates on progress</li>
-                <li>I will perform and report product testing to ensure compliance to standards and preferences</li>
-                <li>I will respond to all messages swiftly</li>
-                <li>I will deliver a fast loading product</li>
-                <li>I will not take on jobs outside of my area of expertise</li>
-            </ul>
-        
+            <div class="row">
+                <div class="mission col">
+                    <p> 
+                        I am dedicated to making a flexible, reliable product that betters the community.
+                    </p>
+                    <p>
+                        Let's lead by example and save the world with healthy business practices and good
+                        software security.
+                    </p>  
+                </div>
+                
+                <ul>
+                    <li>I keep all personal data private</li>
+                    <li>I give frequent updates on progress</li>
+                    <li>I perform and report product testing to ensure compliance to standards and preferences</li>
+                    <li>I respond promptly</li>
+                    <li>I deliver a fast loading product</li>
+                    <li>I don't take jobs outside of my area of expertise</li>
+                </ul> 
+            </div>
+
             <a class="contact-me" href="/inquiries" title="contact-me">Contact Me</a>    
         </div>
     </div>
     
     <div class="projects col">
-        <h2>Github Projects</h2>
+        <h2 class="title">Github Projects</h2>
         <div class="card-list">
             @for (project of projects; track $index) {
                 @if (project.language != null) {

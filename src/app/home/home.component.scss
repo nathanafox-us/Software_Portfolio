@@ -8,63 +8,84 @@
     flex-flow: column;
 }
 
-.page-content .col h2 {
-    align-self: center;
-    font-size: 30px;
-    margin: 20px;
+.page-content .row {
+    display: flex;
+    flex-flow: row;
 }
 
-.info {
+.page-content .title {
+    margin-left: 5px;
+    font-size: 40px;
+}
+
+.info.col {
     border-radius: 20px;
     background-color: #FEFEFE;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-}
 
-.info p {
-    text-align: center;
-    padding: 20px;
-    margin: 0px;
-}
+    .mission.col {
+        border-bottom: solid #FFE4C4;
+        border-top-left-radius: 20px;
 
-.info ul {
-    background-color: #FFE4C4;
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-    list-style-type: none;
-}
+        max-width: 45%;
 
-.info li {
-    max-width: 600px;
-    margin: 0px auto;
-}
-
-a.contact-me {
-    align-self: center;
-    text-align: center;
-
-    text-decoration: none;
-
-    background-color: bisque;
-    color: #222;
-
-    padding: 10px;
-    margin: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: space-around;
+        justify-content: space-around;
     
-    border-radius: 20px;
-}
+        p {
+            text-align: center;
+            padding: 20px;
+    
+            font-size: 20px;
 
-.info a.contact-me:hover {
-    background-color: rgb(255, 200, 132);
+            margin: 0px;
+        }
+    }
+
+    ul {
+        border-top-right-radius: 20px;
+        background-color: #FFE4C4;
+
+        margin: 0px;
+        padding: 10px;
+
+        list-style-type: none;
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    a.contact-me {
+        align-self: center;
+        text-align: center;
+
+        text-decoration: none;
+
+        background-color: bisque;
+        color: #222;
+
+        padding: 10px;
+        margin: 20px;
+        
+        border-radius: 20px;
+    }
+
+    a.contact-me:hover {
+        background-color: rgb(255, 200, 132);
+    }
 }
 
 .card-list {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr;
 
     margin: -10px -10px;
+    margin-bottom: 0px;
 }
 
 @media (min-width: 850px) {

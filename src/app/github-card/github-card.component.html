@@ -6,7 +6,7 @@
             target="_blank" 
             title="{{projectTitle}}"
         >
-            {{projectTitle}}
+            {{projectTitle | titlecase}}
         </a>
     </label>
     
@@ -14,5 +14,8 @@
         <p>{{projectDetails}}</p>
     </div>
 
-    <app-language-wheel [languages]=languages></app-language-wheel>
+    <div class="chart-container">
+        <canvasjs-chart [styles]="{width: '100%', height: '250px'}" [options]=chartOptions></canvasjs-chart>
+    </div>
+    
 </div>

@@ -16,7 +16,7 @@ export class HomeComponent {
     _githubService.getRepos().subscribe(
       user => {
         this.projects = user;
-        console.log(user);
+        //console.log(user);
       }
     )
   }

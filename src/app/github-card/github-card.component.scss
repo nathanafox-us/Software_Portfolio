@@ -1,5 +1,4 @@
 .card {
-    border: solid;
     border-radius: 10px;
     margin: 10px;
 
@@ -12,20 +11,34 @@
 
 .card label {
     text-align: center;
-    margin: 10px;
     font-size: large;
+    background-color: #fefefe;
+
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card label a {
+    text-decoration: none;
 }
 
 .card .details {
     padding: 10px;
     background-color: bisque;
-    height: 75px;
 }
 
 .card .fa-github {
     align-self: flex-end;
     color: black;
     margin: 20px;
+}
+
+.chart-container {
+    padding: 20px;
+    background-color: #fefefe;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* On mouse-over, add a deeper shadow */

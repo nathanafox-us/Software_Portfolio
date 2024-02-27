@@ -1,6 +1,5 @@
 .header {
     width: 100%;
-    background-color: #FEFEFE;
 
     display: flex;
     flex-flow: column;
@@ -8,88 +7,76 @@
 
     justify-content: space-between;
     
-    border-bottom: solid grey;
-}
-
-// Column when mobile, then becomes row when there is enough room
-.header .row {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.header .title {
-    margin-top: 10px;
-    margin-bottom: 120px;
-}
-
-.header .title h1 {
-    z-index: 1;
-}
-
-.header img {
-    position: absolute;
-    z-index: 0;
-
-    height: 200px;
-}
-
-.tab-bar {
-    max-width: 80%;
-
-    /* flexbox */
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-    justify-content: space-around;
-
-    margin: 0 10px;
-}
-
-a {
-    background-color: #3f525c;
-    padding: 10px;
-    font-size: x-large;
+    padding: 0px 5%;
 
     text-decoration: none;
-    display: inline-block;
-    color: #eee;
-    text-align: center;
-    
-    height: fit-content;
-    margin: 10px;
-    box-sizing: border-box;
-} 
-  
-a:hover {
-    background-color: #000;
+    color: black;
+
+    .row {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-top: 5lvh;
+
+        h1 {
+            position: absolute;
+            margin: 0px;
+            margin-top: 80px;
+            font-size: 100px;
+            z-index: 1;
+
+            text-align: center;
+        }
+    }
+
+    img {
+        position: absolute;
+        z-index: 0;
+
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
 }
 
-@media (min-width: 600px) {
-    .header .row {
-        flex-flow: row;
-    }    
-
-    .header .title {
-        margin: 10px;
-    }
-
-    .header {
-        flex-flow: row;
-    }
-
-    .header img {
-        position: relative;
-        height: 100px;
-    }
+.social-links {
+    margin-top: min(100lvw, 500px);
+    padding-top: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) { 
     .header {
+        flex-flow: row;
         justify-content: space-between;
+        
+        .title {
+            display: flex;
+            flex-flow: row;
+
+            align-items: center;
+
+            margin: 10px;
+    
+            h1 {
+                position: relative;
+                margin: 0px;
+
+                font-size: 60px;
+            }
+        }
+
+        img {
+            position: relative;
+            height: 100px;
+            width: auto;
+        }
     }
 
-    .a {
-        margin: auto .5rem;
+    .social-links {
+        margin: 0px;
+        padding: 0px;
     }
 }

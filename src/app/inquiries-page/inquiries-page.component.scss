@@ -1,21 +1,13 @@
 .inquiries-page {
     display: flex;
     flex-flow: column;
-
-    height: 100lvh;
-    margin-top: -120px;
-
     align-items: center;
-}
 
-.row {
-    display: flex;
-    flex-flow: row;
+    width: 90%;
+    margin: auto;
 }
 
 h2.contact-me {
-    margin: 20px;
-    margin-top: 140px;
     font-size: 30px;
 }
 
@@ -24,31 +16,33 @@ h2.contact-me {
     padding: 15px;
     border-radius: 20px;
     border: solid grey;
-    width: 85%;
+
+    width: 100%;
 }
-.inquiries-page textarea {
-    margin: 10px;   
+.inquiries-page textarea {  
     padding: 15px;
     border-radius: 20px;
     border: solid grey;
 
     resize: vertical;
 
-    width: 85%;
     height: 200px;
+    width: 100%;
 }
 
-.inquiries-page a {
-    margin: 10px;
-    padding: 10px;
+a {
+    padding: 15px;
+    margin: 15px;
+
+    text-align: center;
     text-decoration: none;
 
+    color: #000;
+
+    border: solid grey;
     border-radius: 20px;
-    background-color: bisque;
-    color: #222;
 }
 
-.inquiries-page a:hover {
-    background-color: rgb(255, 200, 132);
+a:hover {
     cursor: pointer;
 }

@@ -1,82 +1,82 @@
 .header {
     width: 100%;
+    padding: 5lvw;
+    padding-bottom: 0px;
 
     display: flex;
     flex-flow: column;
     align-items: center;
 
     justify-content: space-between;
+
+    background-color: white;
+
     
-    padding: 0px 5%;
-
-    text-decoration: none;
-    color: black;
-
-    .row {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .title {
-        margin-top: 5lvh;
-
-        h1 {
-            position: absolute;
-            margin: 0px;
-            margin-top: 80px;
-            font-size: 100px;
-            z-index: 1;
-
-            text-align: center;
-        }
-    }
-
-    img {
-        position: absolute;
-        z-index: 0;
-
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
 }
 
-.social-links {
-    margin-top: min(100lvw, 500px);
+.title {
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    
+    width: 100%;
+
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+
+    margin: 0px;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    text-align: center;
+
     padding-top: 20px;
 }
 
-@media (min-width: 1200px) { 
+nav a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    color: #000;
+    text-decoration: none;
+
+    border-top: solid grey;
+    border-bottom: solid grey;
+
+    padding: 20px;
+    font-size: 24px;
+}
+nav a:first-child {
+    border-top-left-radius: 10px;
+}
+nav a:last-child {
+    border-top-right-radius: 10px;
+}
+
+.selected-link {
+    color: red;
+    background-color: #EFEFEF;
+}
+
+@media (min-width:800px) {
     .header {
-        flex-flow: row;
-        justify-content: space-between;
-        
-        .title {
-            display: flex;
-            flex-flow: row;
-
-            align-items: center;
-
-            margin: 10px;
-    
-            h1 {
-                position: relative;
-                margin: 0px;
-
-                font-size: 60px;
-            }
-        }
-
-        img {
-            position: relative;
-            height: 100px;
-            width: auto;
-        }
-    }
-
-    .social-links {
-        margin: 0px;
-        padding: 0px;
+        padding-top: 2lvw;
     }
 }

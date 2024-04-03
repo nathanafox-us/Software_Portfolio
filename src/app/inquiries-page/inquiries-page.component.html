@@ -1,18 +1,10 @@
-<div class="page-content inquiries-page">
-
+<div class="inquiries-page">
     <h2 class="contact-me">Contact Me</h2>
 
     <input type="text" placeholder="Name" [(ngModel)]=name />
-
-    <input type="text" placeholder="Email" [(ngModel)]=fromEmail />
-
+    <input type="text" placeholder="Email*" [(ngModel)]=fromEmail />
     <input type="text" placeholder="Subject" [(ngModel)]=subject />
-
     <textarea placeholder="Message" [(ngModel)]=message></textarea>
 
-    <div class="row submit">
-        <a href="/" class="back">Back</a>
-        <a (click)="submitForm()">Submit</a>
-    </div>
-    
+    <a (click)="submitForm()">Submit</a>
 </div>

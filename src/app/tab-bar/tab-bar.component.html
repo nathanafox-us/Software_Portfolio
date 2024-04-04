@@ -1,7 +1,11 @@
-<a href="/" class="header">
-    <div class="title row">
+<div class="header">
+    <a routerLink="/" class="title">
         <img alt="Fox Head Logo" src="assets/fox_head_icon.png"/>
         <h1>Nathan Fox</h1>
-    </div>
-    <app-footer class="social-links"></app-footer>
-</a>
+    </a>
+    <nav>
+        <a [routerLink]="['/home']" routerLinkActive="selected-link">Portfolio</a>
+        <a routerLink="/blog" routerLinkActive="selected-link">Blog</a>
+        <a [routerLink]="['/inquiries']" routerLinkActive="selected-link">Contact</a>
+    </nav>
+</div>

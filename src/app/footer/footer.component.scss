@@ -1,8 +1,34 @@
-.social-icons {
-    width: 100%;
+.footer {
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 0px;
+
+    border-radius: 10px;
+    border-top: solid grey;
+    border-bottom: solid grey;
+
+    width: 90%;
 
     display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.email {
+    color: black;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
     justify-content: center;
+
+    padding-top: 10px;
 }
 
 /* Style all font awesome icons */
@@ -15,9 +41,6 @@
     border-radius: 25%;
     text-align: center;
     text-decoration: none;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
 }
 
 .fa-aws {

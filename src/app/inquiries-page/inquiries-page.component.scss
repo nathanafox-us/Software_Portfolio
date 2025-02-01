@@ -3,8 +3,7 @@
     flex-flow: column;
     align-items: center;
 
-    width: 90%;
-    margin: auto;
+    padding-inline: 30px;
 }
 
 h2.contact-me {
@@ -16,7 +15,6 @@ h2.contact-me {
     padding: 15px;
     border-radius: 20px;
     border: solid grey;
-
     width: 100%;
 }
 .inquiries-page textarea {  
@@ -32,10 +30,11 @@ h2.contact-me {
 
 a {
     padding: 15px;
-    margin: 15px;
+    margin-block: 10px;
 
     text-align: center;
     text-decoration: none;
+    align-self: flex-end;
 
     color: #000;
 

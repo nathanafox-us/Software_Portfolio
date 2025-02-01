@@ -1,21 +1,17 @@
-<div class="card">
-    
-    <label>
-        <a 
-            href="{{cloneUrl}}" 
-            target="_blank" 
-            title="{{projectTitle}}"
-        >
+<a href="{{cloneUrl}}" target="_blank" title="{{projectTitle}}">
+    <div class="card">
+        <label>
             {{projectTitle | titlecase}}
-        </a>
-    </label>
-    
-    <div class="details">
-        <p>{{projectDetails}}</p>
-    </div>
+        </label>
+        
+        <div class="details">
+            <p>{{projectDetails}}</p>
+        </div>
 
-    <div class="chart-container">
-        <canvasjs-chart [styles]="{width: '100%', height: '250px'}" [options]=chartOptions></canvasjs-chart>
-    </div>
+        <div class="chart-container">
+            <canvasjs-chart [styles]="{width: 'auto', height: '100%'}" [options]=chartOptions></canvasjs-chart>
+        </div>
     
-</div>
+    </div>
+</a>
+

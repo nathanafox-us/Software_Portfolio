@@ -1,20 +1,24 @@
-<div class="page-content">
-    <div class="mission-section">
-        <h2 class="title">Mission</h2>
-        <p>I am dedicated to making a flexible, reliable product that betters the community.</p>
-        <p>Let's lead by example and save the world with healthy business practices and good software security.</p>  
-        <ul>
-            <li>I keep all personal data private</li>
-            <li>I give frequent updates on progress</li>
-            <li>I perform and report product testing to ensure compliance to standards and preferences</li>
-            <li>I respond promptly</li>
-            <li>I deliver a fast loading product</li>
-            <li>I don't take jobs outside of my area of expertise</li>
-        </ul> 
-    </div>
-    
-    <div class="github-section">
-        <h2 class="title">Github Projects</h2>
+<div class="page-content mission-section">
+    <h2 class="title">Mission</h2>
+    <p>I am dedicated to making flexible and reliable products that better the community.</p>
+    <p>Let's lead by example and save the world with healthy business practices and good software security.</p>  
+    <ul>
+        <li>I keep all personal data private</li>
+        <li>I give frequent updates on progress</li>
+        <li>I perform product testing to ensure compliance to standards and preferences</li>
+        <li>I deliver a fast loading product</li>
+        <li>I don't accept jobs outside of my area of expertise</li>
+    </ul> 
+</div>
+
+<div class="page-content github-section">
+    <h2 class="title">Github Projects</h2>
+    @if(tooManyRequests) {
+        <p>Github API rate-limit reached!</p>
+        <p>Unauthenticated requests are limited to 60/hour, please try again later!</p>
+        <a class="fa fa-github" href="https://www.github.com/nathanafox-us" target="_blank" title="github"></a>
+    }
+    @else {
         <div class="card-list">
             @for (project of projects; track $index) {
                 @if (project.language != null) {
@@ -27,5 +31,5 @@
                 }
             }  
         </div>
-    </div>
+    } 
 </div>

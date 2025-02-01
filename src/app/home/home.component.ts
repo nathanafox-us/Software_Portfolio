@@ -11,12 +11,21 @@ import { GithubProjectService } from '../github-project.service';
 })
 export class HomeComponent {
   projects:any;
+  tooManyRequests:boolean = false;
 
   constructor(private _githubService:GithubProjectService) {
     _githubService.getRepos().subscribe(
       user => {
         this.projects = user;
         //console.log(user);
+        this.tooManyRequests = false;
+      },
+      error => {
+        console.log(error);
+        if (error.status == 403) {
+          console.log("too many requests...");
+          this.tooManyRequests = true;
+        }
       }
     )
   }

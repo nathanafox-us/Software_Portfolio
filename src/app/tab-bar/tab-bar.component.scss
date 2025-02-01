@@ -42,9 +42,11 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
 
-    text-align: center;
+    margin-top: 20px;
 
-    padding-top: 20px;
+    text-align: center;
+    border: solid gray;
+    border-radius: 10px;
 }
 
 nav a {
@@ -54,9 +56,6 @@ nav a {
 
     color: #000;
     text-decoration: none;
-
-    border-top: solid grey;
-    border-bottom: solid grey;
 
     padding: 20px;
     font-size: 24px;

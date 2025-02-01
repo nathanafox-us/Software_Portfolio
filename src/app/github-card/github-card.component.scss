@@ -1,31 +1,40 @@
-.card {
-    border-radius: 10px;
-    margin: 10px;
+a {
+    text-decoration: none;
+}
 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card {
     transition: 0.3s;
 
     display: flex;
     flex-flow: column;
+
+    border-radius: 10px;
+
+    background-color: rgb(53, 45, 39);
+    border: solid black 1px;
+    
+    max-width: 330px;
+    margin: auto;
 }
 
 .card label {
     text-align: center;
     font-size: large;
-    background-color: #fefefe;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     padding: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
 
-.card label a {
-    text-decoration: none;
+    color: whitesmoke;
 }
 
 .card .details {
-    padding: 10px;
-    background-color: bisque;
+    padding-inline: 20px;
+    height: 70px;
+    background-color: rgb(205, 111, 64);
+    text-align: center; 
+    color: black;
 }
 
 .card .fa-github {
@@ -35,10 +44,13 @@
 }
 
 .chart-container {
-    padding: 20px;
-    background-color: #fefefe;
+    background-color: rgb(234, 225, 218);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 20px;
+    height: 150px;
+
+    pointer-events: none;
 }
 
 /* On mouse-over, add a deeper shadow */

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 body {
@@ -9,4 +9,15 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(255, 172, 127);*/
     margin: 0px;
+}
+
+.page-content {
+    border: solid gray;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px;
 }

@@ -1,48 +1,47 @@
 .header {
-    width: 100%;
-    padding: 5lvw;
-    padding-bottom: 0px;
+    width: 90%;
+    margin: auto;
 
     display: flex;
     flex-flow: column;
     align-items: center;
-
-    justify-content: space-between;
-
-    background-color: white;
 }
 
 .title {
     display: flex;
     flex-flow: column;
-    align-items: center; 
+    align-items: center;
     
     width: 100%;
+    margin: auto;
+    padding: 20px;
 
     color: #000;
     text-decoration: none;
+}
+@media (width >= 780px) {
+    .title {
+        flex-flow: row;
+        margin: auto;
+        width: auto;
+    }
 }
 
 h1 {
     font-size: 100px;
     text-align: center;
-
     margin: 0px;
-    margin-top: 15px;
 }
 
 img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    height: 140px;
+    width: auto;
 }
 
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-
-    margin-top: 20px;
 
     text-align: center;
     border: solid gray;
@@ -72,10 +71,4 @@ nav a:last-child {
 .selected-link {
     color: red;
     background-color: #EFEFEF;
-}
-
-@media (min-width:800px) {
-    .header {
-        padding-top: 2lvw;
-    }
 }
